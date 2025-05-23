@@ -69,21 +69,21 @@ function MyTabs() {
       <Tab.Screen name="Explore" component={StackBNavigator} 
       options={{
         tabBarIcon: ({ color }) => (
-          <Ionicons name="search1" size={24} color={color} />
+          <Ionicons name="search" size={24} color={color} />
          ),
       }}
       />
       <Tab.Screen name="Perfil"   component={StackCNavigator}
         options={{
           tabBarIcon: ({ color }) => (
-            <Ionicons name="user" size={24} color={color} />
+            <Ionicons name="person" size={24} color={color} />
            ),
         }}
       />
       <Tab.Screen name="Ajustes" component={StackDNavigator} 
       options={{
         tabBarIcon: ({ color }) => (
-          <Ionicons name="setting" size={24} color={color} />
+          <Ionicons name="settings" size={24} color={color} />
          ),
       }}
       />
