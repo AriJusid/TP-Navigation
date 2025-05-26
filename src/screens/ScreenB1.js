@@ -8,9 +8,12 @@
   function ScreenB1() {
       const navigation = useNavigation();
       return (
-        <View style={styles.homeScreen}>
-        <Text style={styles.text}>PERFIL</Text>
-          <Button onPress = {() => navigation.navigate(ScreenB2)} title='Ver más'> </Button>
+        <View style={[styles.homeScreen, {backgroundColor:'#cce4ff'}]}>
+          <Text style={{fontSize:20}} >Buscar eventos</Text>
+          <TextInput style = {styles.input}
+            placeholder="Busca un evento"/>
+          <Button onPress = {() => navigation.navigate(ScreenB2)} title='Buscar' color="#642684"> </Button>
+          
         </View>
       );
     }

@@ -5,7 +5,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ffffff',
   },
   text: {
     color: 'white',
@@ -19,12 +18,12 @@ const styles = StyleSheet.create({
   },
 
   img:{
-    width:350,
-    height:250,
+    width:600,
+    height:400,
     resizeMode:'contain',
-    flex:16,
+    flex:10,
     marginBottom:85,
-    marginTop:220,
+    marginTop:20,
   },
   botones:{
     width: 280,

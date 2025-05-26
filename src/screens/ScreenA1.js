@@ -9,14 +9,17 @@ import styles from '../styles/styles';
     const picInicio = require('../../assets/images/picInicio.png');
   
     return (
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView style={[styles.container, {backgroundColor:'#f4ccff'}]}>
         <Image source={picInicio} resizeMode="cover" style={styles.img}/>
-        <View style={{flex:8, marginBottom:60}}>
+        <View style={{flex:10, marginBottom:60}}>
           <Text style={{fontWeight:'bold', fontSize: 28, textAlign:'center'}}>Descubre eventos </Text>
           <Text style={{fontWeight:'bold', fontSize: 28, textAlign:'center', marginBottom: 15}}>que conectan tu pasión</Text>
   
           <Text style={{fontSize: 15, textAlign:'center', marginHorizontal:30}}>Participa de eventos relevantes para </Text>
           <Text style={{fontSize: 15, textAlign:'center', marginHorizontal:30}}>vos, de forma simple y organizada</Text>
+          <TextInput 
+            style = {styles.input}
+            placeholder="Ingrese su email"/>
         </View>
         <View style={styles.botones}>
           <TouchableOpacity style={{height:10}} onPress = {() => navigation.navigate(ScreenA2)}>
