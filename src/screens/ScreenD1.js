@@ -9,9 +9,10 @@
   function ScreenD1() {
       const navigation = useNavigation();
       return (
-        <View style={styles.homeScreen}>
-        <Text style={styles.text}>AJUSTES</Text>
-          <Button onPress = {() => navigation.navigate(ScreenD2)} title='Ver más'> </Button>
+        <View style={[styles.homeScreen, {backgroundColor: '#fffab9'}]}>
+        <Text style={{fontSize:20}}>Ajustes</Text>
+        <TextInput style = {styles.input} placeholder="Buscar ajustes"/>
+        <Button onPress = {() => navigation.navigate(ScreenD2)} title='Más ajustes'> </Button>
         </View>
       );
     }

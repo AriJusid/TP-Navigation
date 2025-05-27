@@ -8,8 +8,13 @@ import styles from '../styles/styles';
 function ScreenC2() {
     const navigation = useNavigation();
     return (
-      <View style={styles.homeScreen}>
-        <Text style={styles.text}>CREATE 2</Text>
+      <View style={[styles.homeScreen, {backgroundColor: '#caffda'}]}>
+        <Text style={{fontSize:20}}>Seguro que desea agregar esta información?</Text>
+        <View style={{display:'flex', flexDirection:'row', justifyContent:'space-between', width:200}}>
+          <Button 
+           title='Agregar'> </Button>
+          <Button title='Cancelar'> </Button>
+        </View>
       </View>
     );
   }

@@ -7,8 +7,11 @@
   function ScreenD2() {
       const navigation = useNavigation();
       return (
-        <View style={styles.homeScreen}>
-          <Text style={styles.text}>AJUSTES 2</Text>
+        <View style={[styles.homeScreen, {backgroundColor: '#fffab9'}]}>
+          <Text style={{fontSize:20}}>Aquí hay más ajustes</Text>
+          <Text style={{fontSize:15}}>Desea agregar más ajustes?</Text>
+          <TextInput style = {styles.input} placeholder="Agregar ajuste"/>
+          <Button title='Cerrar'> </Button>
         </View>
       );
     }

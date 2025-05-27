@@ -18,11 +18,11 @@ const styles = StyleSheet.create({
   },
 
   img:{
-    width:600,
-    height:400,
+    width:350,
+    height:250,
     resizeMode:'contain',
-    flex:10,
-    marginBottom:85,
+    flex:5,
+    marginBottom:75,
     marginTop:20,
   },
   botones:{

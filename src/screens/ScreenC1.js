@@ -8,9 +8,13 @@
   function ScreenC1() {
       const navigation = useNavigation();
       return (
-        <View style={styles.homeScreen}>
-        <Text style={styles.text}>CREATE</Text>
-          <Button onPress = {() => navigation.navigate(ScreenC2)} title='Ver más'> </Button>
+        <View style={[styles.homeScreen, {backgroundColor: '#caffda'}]}>
+        <Text style={{fontSize:20}}>Perfil</Text>
+        <Text style={{fontSize:15}}>Agregar información sobre mi</Text>
+        <TextInput 
+            style = {styles.input}
+            placeholder="Ingrese su información"/>
+        <Button onPress = {() => navigation.navigate(ScreenC2)} title='Agregar'> </Button>
         </View>
       );
     }
