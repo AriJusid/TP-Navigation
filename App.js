@@ -21,7 +21,7 @@ const StackD = createNativeStackNavigator();
 
 function StackANavigator() {
   return (
-    <StackA.Navigator>
+    <StackA.Navigator >
       <StackA.Screen name="ScreenA1" component={ScreenA1} />
       <StackA.Screen name="ScreenA2" component={ScreenA2} />
     </StackA.Navigator>

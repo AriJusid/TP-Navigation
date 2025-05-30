@@ -11,7 +11,7 @@ import styles from '../styles/styles';
     return (
       <SafeAreaView style={[styles.container, {backgroundColor:'#f4ccff'}]}>
         <Image source={picInicio} style={styles.img}/>
-        <View style={{flex:10, marginBottom:60}}>
+        <View style={{flex:5, marginBottom:60}}>
           <Text style={{fontWeight:'bold', fontSize: 28, textAlign:'center'}}>Descubre eventos </Text>
           <Text style={{fontWeight:'bold', fontSize: 28, textAlign:'center', marginBottom: 15}}>que conectan tu pasión</Text>
   
